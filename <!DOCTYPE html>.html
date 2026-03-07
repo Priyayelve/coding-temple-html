@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Coding Temple Project</title>
+    <title>My First Web Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f0f8ff;
             margin: 20px;
         }
         h1 {
             color: #2c3e50;
         }
-        p {
-            color: #34495e;
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #e74c3c;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, Coding Temple! this is my first practiceppppp</h1>
-    <p>This is my first HTML practice project.</p>
+    <h1>Hello, Coding Temple This is Priya!</h1>
+    <p>This is my first HTML/CSS/JS practice project.</p>
+
+    <button onclick="showMessage()">Click Me!</button>
+<div id="message"></div>
 
     <ul>
         <li>Learn HTML structure</li>
         <li>Learn CSS basics</li>
-        <li>Practice pushing to GitHub</li>
+        <li>Learn simple JavaScript</li>
     </ul>
 
-    <p>I'm excited to keep learning yess!</p>
+    <script>
+        function showMessage() {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = "You clicked the button! 🎉";
+        }
+    </script>
 </body>
 </html>
